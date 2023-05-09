@@ -16,56 +16,49 @@
 :dataset
     a rb:Dataset, dcat:Dataset ;
     dcterms:conformsTo <https://w3id.org/riverbench/schema/metadata> ;
-    dcterms:identifier "[YOUR DATASET ID (only a-z, 0-9, -)]" ;
+    dcterms:identifier "muziekweb" ;
 
-    dcterms:title "[HUMAN-READABLE NAME OF YOUR DATASET]"@en ;
-    dcterms:description "[ELABORATED DESCRIPTION OF THE DATASET]"@en ;
-    dcterms:issued "[DATE OF INITIAL SUBMISSION, YYYY-MM-DD]"^^xsd:date ;
+    dcterms:title "Muziekweb"@en ;
+    dcterms:description "The dataset consists of the main graph of [Muziekweb](https://data.muziekweb.nl/), a high-quality Dutch knowledge base about music, containing information about artists, CD, LPs, and more. The knowledge base is richly annotated and contains plentiful links to external resources."@en ;
+    dcterms:issued "2023-05-09"^^xsd:date ;
 
     # License and attribution
-    # SPDX license list: https://spdx.org/licenses/
-    # Do not include ".html" at the end of the SPDX license URL
-    # Example of a valid URL: https://spdx.org/licenses/CC-BY-4.0
-    dcterms:license <SPDX-LICENSE-URL> ;
-    dcterms:rights "[ADDITIONAL LICENSING NOTES, IF NEEDED]"@en ;
-    # Feel free to add more creators or use any FOAF properties here
+    dcterms:license <https://spdx.org/licenses/ODC-By-1.0> ;
     dcterms:creator [
-        foaf:name "[YOUR NAME]" ;
-        foaf:nick "[YOUR NICK]" ;
-        foaf:homepage <LINK-TO-YOUR-PAGE> ;
-        # Optional: use this property to order creators in the generated docs
+        foaf:name "Nederlands instituut voor Beeld & Geluid"@nl ,
+            "Netherlands Institute for Sound and Vision"@en ;
+        foaf:homepage <https://www.beeldengeluid.nl/> ;
         rbdoc:hasDocWeight 1 ;
+    ] , [
+        foaf:name "Piotr Sowiński" ;
+        foaf:nick "Ostrzyciel" ;
+        rdfs:comment "Processing the dataset" ;
+        foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
+        rbdoc:hasDocWeight 2 ;
     ] ;
-    # If applicable, add a link to the original source of the dataset
-    dcterms:source <LINK-TO-SOURCE> ;
+    dcterms:source <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb> ;
     
     # Themes
-    # Full list of themes: https://w3id.org/riverbench/schema/theme
-    dcat:theme <ADD-AT-LEAST-ONE-THEME> ;
+    dcat:theme rbt:encyclopedic, rbt:musical ;
 
     # Technical metadata
-    # URIs of the ontologies used in the dataset
-    rb:usesOntology <ADD-ONTOLOGY-URIS> ;
-    # Set to number of stream elements in the dataset
-    rb:hasStreamElementCount -1 ;
-    # One of: rb:triples, rb:quads, rb:graphs
-    rb:hasStreamElementType <STREAM-ELEMENT-TYPE> ;
+    rb:usesOntology 
+        <https://data.muziekweb.nl/vocab> ,
+        <https://qudt.org/vocab/unit> ,
+        <http://www.w3.org/2004/02/skos/core>
+    ;
+    rb:hasStreamElementCount 2450357 ;
+    rb:hasStreamElementType rb:triples ;
     rb:hasStreamElementSplit [
-        # At least one of: rb:StatementCountStreamElementSplit,
-        #   rb:TimeStreamElementSplit, rb:TopicStreamElementSplit
-        a <SPLIT-TYPE> ;
-        # If your dataset is split by time, specify the temporal property:
-        # rb:hasTemporalProperty <PROPERTY-IRI> ;
-        rdfs:comment "[FURTHER EXPLANATION ON THE SPLIT]"@en
+        a rb:TopicStreamElementSplit ;
+        rdfs:comment "Each stream element corresponds to a different item in the knowledge base. The size of elements varies depending on how much information is there on a given item."@en
     ] ;
-    rb:conformsToRdf11 "" ; # true or false
-    rb:conformsToRdfStarDraft_20211217 "" ; # true or false
-    rb:usesGeneralizedRdfDatasets "" ; # true or false
-    rb:usesGeneralizedTriples "" ; # true or false
-    rb:usesRdfStar "" ; # true or false
+    rb:conformsToRdf11 true ;
+    rb:conformsToRdfStarDraft_20211217 true ;
+    rb:usesGeneralizedRdfDatasets false ;
+    rb:usesGeneralizedTriples false ;
+    rb:usesRdfStar false ;
     
     # Add any additional metadata here
-    # Examples of useful properties:
-    # dcat:temporalResolution, dcat:spatialResolutionInMeters,
-    # dcterms:language
+    dcterms:language "nl" ;
 .
