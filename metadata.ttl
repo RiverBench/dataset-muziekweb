@@ -6,7 +6,9 @@
 @prefix rbdoc: <https://w3id.org/riverbench/schema/documentation#> .
 @prefix rbt: <https://w3id.org/riverbench/schema/theme#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix stax: <https://w3id.org/stax/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # This file contains the manually written metadata for the dataset.
@@ -48,10 +50,25 @@
         <http://www.w3.org/2004/02/skos/core>
     ;
     rb:hasStreamElementCount 2450357 ;
-    rb:hasStreamElementType rb:triples ;
+    stax:hasStreamTypeUsage [
+        a stax:RdfStreamTypeUsage ;
+        rdfs:comment "The dataset can be viewed as a stream of graphs corresponding to items in the knowledge base. Each graph is uniquely identified by its subject IRI."@en ;
+        stax:hasStreamType stax:subjectGraphStream
+    ] , [
+        a stax:RdfStreamTypeUsage ;
+        rdfs:comment "The dataset can be viewed as a flattened stream of triples."@en ;
+        stax:hasStreamType stax:flatTripleStream
+    ] ;
     rb:hasStreamElementSplit [
         a rb:TopicStreamElementSplit ;
-        rdfs:comment "Each stream element corresponds to a different item in the knowledge base. The size of elements varies depending on how much information is there on a given item."@en
+        rdfs:comment "Each stream element corresponds to a different item in the knowledge base. The size of elements varies depending on how much information is there on a given item."@en ;
+        rb:hasSubjectShape [
+            rdfs:comment "Target instances of any class."@en ;
+            sh:targetSubjectsOf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ;
+        ] , [
+            rdfs:comment "Some items don't have a type."@en ;
+            sh:targetSubjectsOf <https://data.muziekweb.nl/vocab/album> ;
+        ] ;
     ] ;
     rb:conformsToRdf11 true ;
     rb:conformsToRdfStarDraft_20211217 true ;
