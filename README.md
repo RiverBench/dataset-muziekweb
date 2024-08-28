@@ -11,7 +11,7 @@
 [![.github/workflows/release.yaml](https://github.com/RiverBench/dataset-muziekweb/actions/workflows/release.yaml/badge.svg?event=push)](https://github.com/RiverBench/dataset-muziekweb/actions/workflows/release.yaml)
 
 
-# muziekweb (development version)
+# Dataset: muziekweb (development version)
 
 The dataset consists of the main graph of [Muziekweb](https://data.muziekweb.nl/), a high-quality Dutch knowledge base about music, containing information about artists, CD, LPs, and more. The knowledge base is richly annotated and contains plentiful links to external resources.
 
@@ -38,15 +38,15 @@ Full documentation for all versions can be found [on the website](https://w3id.o
         - **<abbr title="This axiom needed so that Protege loads DCAT2 without errors.">Homepage</abbr>**: [https://www.beeldengeluid.nl/](https://www.beeldengeluid.nl/)
     - **Piotr Sowiński (2)**    
         - **<abbr title="A name for some thing.">Name</abbr>**: Piotr Sowiński
+        - **<abbr title="A description of the subject resource.">Comment</abbr>**: Processing the dataset
         - **<abbr title="A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).">Nickname</abbr>**: Ostrzyciel
         - **<abbr title="This axiom needed so that Protege loads DCAT2 without errors.">Homepage</abbr>**:     
             -  ([https://orcid.org/0000-0002-2543-9461](https://orcid.org/0000-0002-2543-9461))
             - Ostrzyciel ([https://github.com/Ostrzyciel](https://github.com/Ostrzyciel))
-        - **<abbr title="A description of the subject resource.">Comment</abbr>**: Processing the dataset
 - **<abbr title="A legal document giving official permission to do something with the resource.">License</abbr>**: [https://spdx.org/licenses/ODC-By-1.0](https://spdx.org/licenses/ODC-By-1.0)
 - **<abbr title="A related resource from which the described resource is derived.">Source</abbr>**: [https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb)
 - **<abbr title="Date of formal issuance of the resource.">Date Issued</abbr>**: 2023-05-09
-- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2024-06-05
+- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2024-08-28
 - **<abbr title="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.">Landing page</abbr>**: [muziekweb (dev)](https://w3id.org/riverbench/datasets/muziekweb/dev)
 - **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: Metadata ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
 
@@ -55,23 +55,23 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="Inverse of stax:isUsageOf – indicates that the subject is related to a usage of an RDF stream type.  The subject for this property can be for example a published stream on the Web (e.g., vocals:RDFStream) or a scientific publication that discusses a usage of an RDF stream type.">Has stream type usage</abbr>**: 
     - **RDF stream type usage (1)**    
         - **Type**: <abbr title="Class for instances of using an RDF stream type, in a program, an academic paper, or elsewhere. This class is suitable for annotating both theoretical uses and practical ones, i.e., real streams or datasets.  Instances of this class should have the stax:hasStreamType property pointing to a concrete stream type. The stax:usedIn property is recommended to indicate where the stream is used – alternatively you can use its inverse (stax:hasStreamTypeUsage). The use of other properties (e.g., rdfs:label, rdfs:comment) is encouraged to give more context about the usage.  Note that 'stream type usage' is a subjective assertion and instances of this class may be annotated with additional provenance properties to explain who made the assertion. There can be multiple views on what type of stream is in use, depending on the involved actor, processing step, etc.">RDF stream type usage</abbr> ([stax:RdfStreamTypeUsage](https://w3id.org/stax/ontology#RdfStreamTypeUsage))
-        - **<abbr title="A description of the subject resource.">Comment</abbr>**: The dataset can be viewed as a stream of graphs corresponding to items in the knowledge base. Each graph is uniquely identified by its subject IRI. _(<abbr title="English">en</abbr>)_
-        - **<abbr title="For an RDF stream type usage, this property indicates which stream type is used.">Has stream type</abbr>**: <abbr title="An RDF subject graph stream is an RDF graph stream in which every element contains an IRI node (called the subject node) that uniquely identifies the graph in the stream. Every other node in the graph can be reached by traversing triples, starting from the subject node.">RDF subject graph stream</abbr> ([stax:subjectGraphStream](https://w3id.org/stax/ontology#subjectGraphStream))
-    - **RDF stream type usage (2)**    
-        - **Type**: <abbr title="Class for instances of using an RDF stream type, in a program, an academic paper, or elsewhere. This class is suitable for annotating both theoretical uses and practical ones, i.e., real streams or datasets.  Instances of this class should have the stax:hasStreamType property pointing to a concrete stream type. The stax:usedIn property is recommended to indicate where the stream is used – alternatively you can use its inverse (stax:hasStreamTypeUsage). The use of other properties (e.g., rdfs:label, rdfs:comment) is encouraged to give more context about the usage.  Note that 'stream type usage' is a subjective assertion and instances of this class may be annotated with additional provenance properties to explain who made the assertion. There can be multiple views on what type of stream is in use, depending on the involved actor, processing step, etc.">RDF stream type usage</abbr> ([stax:RdfStreamTypeUsage](https://w3id.org/stax/ontology#RdfStreamTypeUsage))
         - **<abbr title="A description of the subject resource.">Comment</abbr>**: The dataset can be viewed as a flattened stream of triples. _(<abbr title="English">en</abbr>)_
         - **<abbr title="For an RDF stream type usage, this property indicates which stream type is used.">Has stream type</abbr>**: <abbr title="A flat RDF triple stream is a flat RDF stream whose elements are triples.">Flat RDF triple stream</abbr> ([stax:flatTripleStream](https://w3id.org/stax/ontology#flatTripleStream))
+    - **RDF stream type usage (2)**    
+        - **Type**: <abbr title="Class for instances of using an RDF stream type, in a program, an academic paper, or elsewhere. This class is suitable for annotating both theoretical uses and practical ones, i.e., real streams or datasets.  Instances of this class should have the stax:hasStreamType property pointing to a concrete stream type. The stax:usedIn property is recommended to indicate where the stream is used – alternatively you can use its inverse (stax:hasStreamTypeUsage). The use of other properties (e.g., rdfs:label, rdfs:comment) is encouraged to give more context about the usage.  Note that 'stream type usage' is a subjective assertion and instances of this class may be annotated with additional provenance properties to explain who made the assertion. There can be multiple views on what type of stream is in use, depending on the involved actor, processing step, etc.">RDF stream type usage</abbr> ([stax:RdfStreamTypeUsage](https://w3id.org/stax/ontology#RdfStreamTypeUsage))
+        - **<abbr title="A description of the subject resource.">Comment</abbr>**: The dataset can be viewed as a stream of graphs corresponding to items in the knowledge base. Each graph is uniquely identified by its subject IRI. _(<abbr title="English">en</abbr>)_
+        - **<abbr title="For an RDF stream type usage, this property indicates which stream type is used.">Has stream type</abbr>**: <abbr title="An RDF subject graph stream is an RDF graph stream in which every element contains an IRI node (called the subject node) that uniquely identifies the graph in the stream. Every other node in the graph can be reached by traversing triples, starting from the subject node.">RDF subject graph stream</abbr> ([stax:subjectGraphStream](https://w3id.org/stax/ontology#subjectGraphStream))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 2,450,357
 - **<abbr title="Indicates how the stream was split into elements.">Has stream element split</abbr>**: 
     - **Type**: <abbr title="The elements correspond to different topics/subjects in the dataset.">Stream elements split by topic</abbr> ([rb:TopicStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TopicStreamElementSplit))
+    - **<abbr title="A description of the subject resource.">Comment</abbr>**: Each stream element corresponds to a different item in the knowledge base. The size of elements varies depending on how much information is there on a given item. _(<abbr title="English">en</abbr>)_
     - **<abbr title="Indicates the subject node in an RDF subject graph stream, using SHACL. The value of this property should be a SHACL sh:NodeShape with a specified target (e.g., sh:targetSubjectsOf). Only the target will be considered, restrictions on the shape will be ignored.  This property is required for RDF subject graph streams. Only sh:targetClass, sh:targetSubjectsOf, and sh:targetObjectsOf are allowed as the target specification.  This property can be specified multiple times. The different target specifications will then be treated as alternatives.">Has subject shape</abbr>**:     
         - **Has subject shape (1)**    
-            - **<abbr title="Links a shape to a property, indicating that all subjects of triples that have the given property as their predicate must conform to the shape.">Target subjects of</abbr>**: Type ([rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type))
             - **<abbr title="A description of the subject resource.">Comment</abbr>**: Target instances of any class. _(<abbr title="English">en</abbr>)_
+            - **<abbr title="Links a shape to a property, indicating that all subjects of triples that have the given property as their predicate must conform to the shape.">Target subjects of</abbr>**: Type ([rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type))
         - **Has subject shape (2)**    
-            - **<abbr title="Links a shape to a property, indicating that all subjects of triples that have the given property as their predicate must conform to the shape.">Target subjects of</abbr>**: [https://data.muziekweb.nl/vocab/album](https://data.muziekweb.nl/vocab/album)
             - **<abbr title="A description of the subject resource.">Comment</abbr>**: Some items don't have a type. _(<abbr title="English">en</abbr>)_
-    - **<abbr title="A description of the subject resource.">Comment</abbr>**: Each stream element corresponds to a different item in the knowledge base. The size of elements varies depending on how much information is there on a given item. _(<abbr title="English">en</abbr>)_
+            - **<abbr title="Links a shape to a property, indicating that all subjects of triples that have the given property as their predicate must conform to the shape.">Target subjects of</abbr>**: [https://data.muziekweb.nl/vocab/album](https://data.muziekweb.nl/vocab/album)
 - **<abbr title="A vocabulary that is used in the dataset.">Uses vocabulary</abbr>**: 
     - [http://www.w3.org/2004/02/skos/core](http://www.w3.org/2004/02/skos/core)
     - [https://data.muziekweb.nl/vocab](https://data.muziekweb.nl/vocab)
@@ -98,7 +98,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
     - <abbr title="The dataset is distributed as a stream of RDF datasets or RDF graphs (grouped RDF stream in RDF-STaX).">Stream distribution</abbr> ([rb:streamDistribution](https://w3id.org/riverbench/schema/metadata#streamDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 2,450,357
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 251.85 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 251.8 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: text/turtle
 - **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
@@ -112,17 +112,17 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="Inverse of stax:isUsageOf – indicates that the subject is related to a usage of an RDF stream type.  The subject for this property can be for example a published stream on the Web (e.g., vocals:RDFStream) or a scientific publication that discusses a usage of an RDF stream type.">Has stream type usage</abbr>**: 
     - **RDF stream type usage (1)**    
         - **Type**: <abbr title="Class for instances of using an RDF stream type, in a program, an academic paper, or elsewhere. This class is suitable for annotating both theoretical uses and practical ones, i.e., real streams or datasets.  Instances of this class should have the stax:hasStreamType property pointing to a concrete stream type. The stax:usedIn property is recommended to indicate where the stream is used – alternatively you can use its inverse (stax:hasStreamTypeUsage). The use of other properties (e.g., rdfs:label, rdfs:comment) is encouraged to give more context about the usage.  Note that 'stream type usage' is a subjective assertion and instances of this class may be annotated with additional provenance properties to explain who made the assertion. There can be multiple views on what type of stream is in use, depending on the involved actor, processing step, etc.">RDF stream type usage</abbr> ([stax:RdfStreamTypeUsage](https://w3id.org/stax/ontology#RdfStreamTypeUsage))
-        - **<abbr title="A description of the subject resource.">Comment</abbr>**: The dataset can be viewed as a flattened stream of triples. _(<abbr title="English">en</abbr>)_
-        - **<abbr title="For an RDF stream type usage, this property indicates which stream type is used.">Has stream type</abbr>**: <abbr title="A flat RDF triple stream is a flat RDF stream whose elements are triples.">Flat RDF triple stream</abbr> ([stax:flatTripleStream](https://w3id.org/stax/ontology#flatTripleStream))
-    - **RDF stream type usage (2)**    
-        - **Type**: <abbr title="Class for instances of using an RDF stream type, in a program, an academic paper, or elsewhere. This class is suitable for annotating both theoretical uses and practical ones, i.e., real streams or datasets.  Instances of this class should have the stax:hasStreamType property pointing to a concrete stream type. The stax:usedIn property is recommended to indicate where the stream is used – alternatively you can use its inverse (stax:hasStreamTypeUsage). The use of other properties (e.g., rdfs:label, rdfs:comment) is encouraged to give more context about the usage.  Note that 'stream type usage' is a subjective assertion and instances of this class may be annotated with additional provenance properties to explain who made the assertion. There can be multiple views on what type of stream is in use, depending on the involved actor, processing step, etc.">RDF stream type usage</abbr> ([stax:RdfStreamTypeUsage](https://w3id.org/stax/ontology#RdfStreamTypeUsage))
         - **<abbr title="A description of the subject resource.">Comment</abbr>**: The dataset can be viewed as a stream of graphs corresponding to items in the knowledge base. Each graph is uniquely identified by its subject IRI. _(<abbr title="English">en</abbr>)_
         - **<abbr title="For an RDF stream type usage, this property indicates which stream type is used.">Has stream type</abbr>**: <abbr title="An RDF subject graph stream is an RDF graph stream in which every element contains an IRI node (called the subject node) that uniquely identifies the graph in the stream. Every other node in the graph can be reached by traversing triples, starting from the subject node.">RDF subject graph stream</abbr> ([stax:subjectGraphStream](https://w3id.org/stax/ontology#subjectGraphStream))
+    - **RDF stream type usage (2)**    
+        - **Type**: <abbr title="Class for instances of using an RDF stream type, in a program, an academic paper, or elsewhere. This class is suitable for annotating both theoretical uses and practical ones, i.e., real streams or datasets.  Instances of this class should have the stax:hasStreamType property pointing to a concrete stream type. The stax:usedIn property is recommended to indicate where the stream is used – alternatively you can use its inverse (stax:hasStreamTypeUsage). The use of other properties (e.g., rdfs:label, rdfs:comment) is encouraged to give more context about the usage.  Note that 'stream type usage' is a subjective assertion and instances of this class may be annotated with additional provenance properties to explain who made the assertion. There can be multiple views on what type of stream is in use, depending on the involved actor, processing step, etc.">RDF stream type usage</abbr> ([stax:RdfStreamTypeUsage](https://w3id.org/stax/ontology#RdfStreamTypeUsage))
+        - **<abbr title="A description of the subject resource.">Comment</abbr>**: The dataset can be viewed as a flattened stream of triples. _(<abbr title="English">en</abbr>)_
+        - **<abbr title="For an RDF stream type usage, this property indicates which stream type is used.">Has stream type</abbr>**: <abbr title="A flat RDF triple stream is a flat RDF stream whose elements are triples.">Flat RDF triple stream</abbr> ([stax:flatTripleStream](https://w3id.org/stax/ontology#flatTripleStream))
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
     - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 2,450,357
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 297.63 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 297.6 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_full.jelly.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_full.jelly.gz)
@@ -140,7 +140,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
     - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 2,450,357
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 299.91 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 299.9 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-triples
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_full.nt.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_full.nt.gz)
@@ -158,7 +158,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
     - <abbr title="The dataset is distributed as a stream of RDF datasets or RDF graphs (grouped RDF stream in RDF-STaX).">Stream distribution</abbr> ([rb:streamDistribution](https://w3id.org/riverbench/schema/metadata#streamDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 87.29 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 87.3 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: text/turtle
 - **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
@@ -182,7 +182,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 85.49 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 85.5 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_1M.jelly.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_1M.jelly.gz)
@@ -200,7 +200,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 91.60 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 91.6 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-triples
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_1M.nt.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_1M.nt.gz)
@@ -218,7 +218,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
     - <abbr title="The dataset is distributed as a stream of RDF datasets or RDF graphs (grouped RDF stream in RDF-STaX).">Stream distribution</abbr> ([rb:streamDistribution](https://w3id.org/riverbench/schema/metadata#streamDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 8.40 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 8.4 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: text/turtle
 - **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
@@ -242,7 +242,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 7.78 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 7.8 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_100K.jelly.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_100K.jelly.gz)
@@ -260,7 +260,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 8.40 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 8.4 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-triples
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_100K.nt.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_100K.nt.gz)
@@ -278,7 +278,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
     - <abbr title="The dataset is distributed as a stream of RDF datasets or RDF graphs (grouped RDF stream in RDF-STaX).">Stream distribution</abbr> ([rb:streamDistribution](https://w3id.org/riverbench/schema/metadata#streamDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 10,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 860.96 KB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 861.0 KB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: text/turtle
 - **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
@@ -302,7 +302,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 10,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 765.19 KB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 765.2 KB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_10K.jelly.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/jelly_10K.jelly.gz)
@@ -320,7 +320,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 10,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 860.14 KB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 860.1 KB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-triples
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_10K.nt.gz](https://w3id.org/riverbench/datasets/muziekweb/dev/files/flat_10K.nt.gz)
